@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+const pageTitle = 'Print4D'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="container">
+        <h1>Who are we ?</h1>
+        <p>
+            Print4D is a cutting-edge company specializing in 3D printing
+            services and distribution across various platforms. With a
+            commitment to delivering high-quality products, Print4D utilizes
+            state-of-the-art technology to bring your ideas to life through the
+            magic of 3D printing.
+        </p>
+        <p>
+            Our extensive range of services includes the printing and
+            distribution of 3D parts, catering to diverse needs across
+            industries. At Print4D, we understand the significance of material
+            choice in 3D printing, and as such, we offer a choice between PLA
+            (Polylactic Acid) and ABS (Acrylonitrile Butadiene Styrene) for your
+            printing needs. Whether you prioritize eco-friendliness with PLA or
+            seek the durability of ABS, our materials are of the highest
+            quality, ensuring the final product meets your expectations.
+        </p><p>
+            Print4D takes pride in its seamless integration with multiple
+            platforms, making it convenient for clients to access our services
+            from various channels. Our commitment to customer satisfaction is
+            reflected in our ability to accept and fulfill special printing
+            requests. We understand that each project is unique, and our
+            dedicated team is ready to work closely with you to bring your
+            custom 3D printing ideas to fruition.
+        </p><p>
+            Experience the future of manufacturing with Print4D, where
+            precision, quality, and innovation converge to redefine the
+            possibilities of 3D printing. Whether you are an individual with a
+            specific vision or a business looking for efficient and reliable 3D
+            printing solutions, Print4D is your trusted partner in turning
+            imagination into reality.
+        </p>
+        <div class="contact">
+            <button
+                onclick="location.href='mailto:print4d@outlook.fr?subject=Information request'"
+                >Contact us !
+            </button>
+        </div>
+    </div>
+
+    <style>
+        .container {
+            width: 90%;
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #032727;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #032727;
+        }
+
+        button {
+            background-color: #032727;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    </style>
+</BaseLayout>
